@@ -1,0 +1,4 @@
+config BR2_PACKAGE_BBQX0KBD
+    bool "bbqx0kbd"
+    help
+        BBQX0 Keyboard Driver for Linux

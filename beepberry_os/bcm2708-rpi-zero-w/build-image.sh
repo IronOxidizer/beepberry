@@ -6,6 +6,7 @@ mv buildroot-* buildroot
 # `make linux-savedefconfig` to save defconfig
 # it's stored in buildroot/output/build/linux-custom/defconfig
 
+export BR2_EXTERNAL=../external
 make -j $(nproc) -C buildroot defconfig BR2_DEFCONFIG=../br_defconfig && \
     make -j $(nproc) -C buildroot && \
     yes | mv -f buildroot/output/images/sdcard.img . && \

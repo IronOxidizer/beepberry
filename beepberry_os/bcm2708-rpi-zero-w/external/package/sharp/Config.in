@@ -1,0 +1,4 @@
+config BR2_PACKAGE_SHARP
+    bool "sharp"
+    help
+        Sharp Memory LCD Kernel Driver
